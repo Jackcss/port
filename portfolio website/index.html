@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=;, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+    <nav id="desktop_nav">
+      <div class="onScroll">
+        <p>Jack <span class="colored_text">Norman</span></p>
+        <ul id="desktop_links">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="android_nav">
+     <div class="onScroll">
+        <p>Jack <span class="colored_text">Norman</span></p>
+        <div class="hamburger_links">
+             <div class="float_right">
+                <div class="hamburger_nav" onclick="toggleNav()">
+                   <span></span>
+                   <span></span>
+                   <span></span>
+                </div>
+             </div>
+              <ul class="android_links">
+                  <li><a href="#Home" onclick="toggleNav()">Home</a></li>
+                  <li><a href="" onclick="toggleNav()">About</a></li>
+                  <li><a href="" onclick="toggleNav()">Service</a></li>
+                  <li><a href="" onclick="toggleNav()">Contact</a></li>
+              </ul>
+        </div>
+     </div>
+    </nav>
+    <section id="Home">
+        <article class="article_1">
+            <p>Hi I'm</p>
+            <p>Jack Norman</p>
+            <div class="text_container">
+                <p class="static_text">And I'm a</p>
+                <ul class="dynamic_text">
+                     <li>Developer</li>
+                     <li>Designer</li>
+                     <li>Freelancer</li>
+                </ul>
+            </div>
+            <div class="contact_buttons">
+                <button>Contact Me</button>
+                <button>Hire Me</button>
+            </div>
+        </article>
+        <div class="img_cont">
+            <img src="" alt="" id="work_display" style="visibility: hidden;">
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
